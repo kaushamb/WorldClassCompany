@@ -1,0 +1,194 @@
+.header{
+	background-color:red;
+	overflow:hidden;
+}
+.header__logo{
+	height:35px;
+	width:150px;
+	float:left;
+}
+.header__navbar{
+	width:
+	color:#000000;
+    font-family:roboto-medium,sans-serif;
+	
+}
+.header__navbar a {
+	font-size:12px;
+	margin-right:20px;
+	font-weight:bold;
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+  
+
+:root {
+  --background: #f7f7f7;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+
+
+/* navigation styles */
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+
+nav {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  
+}
+
+nav ul {
+  
+  margin: 0;
+  margin-right:25px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing:1px;
+  font-weight:600;
+  text-transform: uppercase;
+  opacity: 0;
+  
+}
+
+nav a:hover {
+  color: aquamarine;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #000;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 9px;
+}
+
+.nav-toggle-label span::after {
+  top: 9px;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  
+ .header__logo{
+	float:left;
+	margin:20px 0 18px 40px;
+} 
+  
+  
+  
+  nav {
+    all: unset;
+	float:right;  
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+  }
+  
+  nav ul {
+    display: flex;
+	margin-top:18px;
+  }
+  
+  nav li {
+    margin-right:13px;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 2.5px;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    top: -.5em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    
+  }
+  
+ 
+
+
+}
